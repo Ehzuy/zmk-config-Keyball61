@@ -27,27 +27,57 @@
 };
 
 / {
+    combos {
+        compatible = "zmk,combos";
+
+        Left-cllick {
+            bindings = <&mkp MB1>;
+            key-positions = <28 27>;
+        };
+    };
+
+    macros {
+        m1: new_macro {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp LBKT &kp RBKT>;
+            label = "NEW_MACRO";
+        };
+    };
+
+    behaviors {
+        holdtap: holdtap {
+            compatible = "zmk,behavior-hold-tap";
+            label = "HOLDTAP";
+            bindings = <&mt>, <&kp>;
+
+            #binding-cells = <2>;
+            tapping-term-ms = <240>;
+            hold-trigger-key-positions = <53 55>;
+        };
+    };
+
     keymap {
         compatible = "zmk,keymap";
 
         default_layer {
             label = "QWRT";
             bindings = <
-&kp ESC         &kp N1        &kp N2  &kp N3  &kp N4  &kp N5                              &kp N6     &kp N7           &kp N8          &kp N9          &kp N0        &kp BSPC
-&kp TAB         &kp Q         &kp W   &kp E   &kp R   &kp T                               &kp Y      &kp U            &kp I           &kp O           &kp P         &kp BACKSLASH
-&kp CAPS        &kp A         &kp S   &kp D   &kp F   &kp G                               &kp H      &kp J            &kp K           &kp L           &kp SEMI      &kp SQT
-&kp LEFT_SHIFT  &kp Z         &kp X   &kp C   &kp V   &kp B   &kp PAGE_DOWN  &kp PAGE_UP  &kp N      &kp M            &kp COMMA       &kp DOT         &kp FSLH      &kp RIGHT_SHIFT
-&kp LCTRL       &kp LEFT_WIN                          &mo 6   &lt 4 SPACE    &mo 5        &kp ENTER  &lt 2 BACKSPACE  &kp LEFT_ARROW  &kp DOWN_ARROW  &kp UP_ARROW  &kp RIGHT
+&kp ESC         &kp N1        &kp N2  &kp N3  &kp N4  &kp N5                                                     &kp N6                   &kp N7       &kp N8          &kp N9          &kp N0         &kp BSPC
+&kp TAB         &kp Q         &kp W   &kp E   &kp R   &kp T                                                      &kp Y                    &kp U        &kp I           &kp O           &kp SEMICOLON  &kp BACKSLASH
+&kp LEFT_SHIFT  &kp A         &kp S   &kp D   &kp F   &kp G                                                      &kp H                    &kp J        &kp K           &kp L           &kp P          &kp SQT
+&kp LEFT_WIN    &kp Z         &kp X   &kp C   &kp V   &kp B      &kp ENTER                         &lt 1 PERIOD  &kp N                    &kp M        &m1             &kp DOT         &kp FSLH       &kp RIGHT_SHIFT
+&kp LCTRL       &kp LEFT_ALT                          &kp SPACE  &holdtap LC(BACKSPACE) BACKSPACE  &mo 5         &holdtap LC(DELETE) DEL  &lt 2 COMMA  &kp LEFT_ARROW  &kp DOWN_ARROW  &kp UP_ARROW   &kp RIGHT
             >;
         };
 
         number_layer {
             bindings = <
-&trans  &kp N1    &kp N2    &kp N3  &kp N4     &kp N5                  &kp N6  &kp N7  &kp N8  &kp N9  &kp N0  &trans
-&trans  &trans    &trans    &trans  &trans     &trans                  &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &kp LEFT  &kp DOWN  &kp UP  &kp RIGHT  &trans                  &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans    &trans    &trans  &trans     &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans                                 &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &kp N1    &kp N2    &kp N3  &kp N4     &kp N5                  &kp N6  &kp N7          &kp N8        &kp N9     &kp N0  &trans
+&trans  &trans    &trans    &trans  &trans     &trans                  &trans  &kp HOME        &kp UP_ARROW  &kp END    &trans  &trans
+&trans  &kp LEFT  &kp DOWN  &kp UP  &kp RIGHT  &trans                  &trans  &kp LEFT_ARROW  &kp DOWN      &kp RIGHT  &trans  &trans
+&trans  &trans    &trans    &trans  &trans     &trans  &trans  &trans  &trans  &trans          &trans        &trans     &trans  &trans
+&trans  &trans                                 &trans  &trans  &trans  &trans  &trans          &trans        &trans     &trans  &trans
             >;
 
             label = "NUM";
