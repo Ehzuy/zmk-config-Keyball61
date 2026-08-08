@@ -36,7 +36,7 @@ layers:
   - K
   - L
   - P
-  - {t: '-', s: _}
+  - {t: '''', s: '"'}
   - LEFT WIN
   - Z
   - X
@@ -50,7 +50,7 @@ layers:
   - M
   - \
   - {t: /, s: '?'}
-  - {t: '''', s: '"'}
+  - {t: '-', s: _}
   - $$mdi:apple-keyboard-control$$
   - LEFT WIN
   - $$mdi:keyboard-space$$
@@ -63,7 +63,7 @@ layers:
   - '&curly_bracket'
   - '&triangle_bracket'
   NUM:
-  - {t: '$$mdi:transfer$$', type: trans}
+  - {t: QWRT, h: toggle}
   - F1
   - F2
   - F3
@@ -102,8 +102,8 @@ layers:
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '$$mdi:transfer$$', type: trans}
+  - $$mdi:pan-up$$
+  - $$mdi:pan-down$$
   - $$mdi:apple-keyboard-option$$
   - {type: held}
   - {type: held alternate}
@@ -125,7 +125,7 @@ layers:
   - {h: '4', s: '$$mdi:bluetooth-connect$$'}
   - $$mdi:bluetooth-off$$
   SYM:
-  - {t: '$$mdi:transfer$$', type: trans}
+  - {t: QWRT, h: toggle}
   - '!'
   - '@'
   - '#'
@@ -449,7 +449,3 @@ combos:
   k: '&mkp MB2'
 - p: [26, 27]
   k: $$mdi:mouse-scroll-wheel$$
-- p: [40, 52]
-  k: $$mdi:pan-down$$
-- p: [52, 28]
-  k: $$mdi:pan-up$$
