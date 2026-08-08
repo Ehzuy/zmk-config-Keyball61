@@ -12,7 +12,7 @@ layers:
   - {t: '8', s: '*'}
   - {t: '9', s: (}
   - {t: '0', s: )}
-  - {t: '$$mdi:backspace$$', type: backspace}
+  - {t: '=', s: +}
   - $$mdi:keyboard-tab$$
   - Q
   - W
@@ -24,7 +24,7 @@ layers:
   - I
   - O
   - {t: ;, s: ':'}
-  - {t: \, s: '|'}
+  - {t: '`', s: '~'}
   - $$mdi:apple-keyboard-shift$$
   - A
   - S
@@ -36,7 +36,7 @@ layers:
   - K
   - L
   - P
-  - {t: '''', s: '"'}
+  - {t: '-', s: _}
   - LEFT WIN
   - Z
   - X
@@ -48,9 +48,9 @@ layers:
   - B
   - N
   - M
-  - {t: ., s: '>'}
+  - \
   - {t: /, s: '?'}
-  - $$mdi:apple-keyboard-shift$$
+  - {t: '''', s: '"'}
   - $$mdi:apple-keyboard-control$$
   - LEFT WIN
   - $$mdi:keyboard-space$$
@@ -61,7 +61,7 @@ layers:
   - '&square_bracket'
   - '&bracket'
   - '&curly_bracket'
-  - $$mdi:arrow-right-bold$$
+  - '&triangle_bracket'
   NUM:
   - {t: '$$mdi:transfer$$', type: trans}
   - F1
