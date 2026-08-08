@@ -61,6 +61,11 @@
             bindings = <&mkp MCLK>;
             key-positions = <26 27>;
         };
+
+        Del {
+            bindings = <&kp DELETE>;
+            key-positions = <54 55>;
+        };
     };
 
     macros {
@@ -111,21 +116,21 @@
         default_layer {
             label = "QWRT";
             bindings = <
-&kp ESC         &kp N1        &kp N2  &kp N3  &kp N4  &kp N5                                       &kp N6       &kp N7   &kp N8           &kp N9                &kp N0          &kp EQUAL
-&kp TAB         &kp Q         &kp W   &kp E   &kp R   &kp T                                        &kp Y        &kp U    &kp I            &kp O                 &kp SEMICOLON   &kp GRAVE
-&kp LEFT_SHIFT  &kp A         &kp S   &kp D   &kp F   &kp G                                        &kp H        &kp J    &kp K            &kp L                 &kp P           &kp SQT
-&kp LEFT_WIN    &kp Z         &kp X   &kp C   &kp V   &lt 1 ENTER  &kp LEFT_ALT   &lt 1 PERIOD     &kp B        &kp N    &kp M            &kp NON_US_BACKSLASH  &kp FSLH        &kp MINUS
-&kp LCTRL       &kp LEFT_WIN                          &kp SPACE    &kp BACKSPACE  &kp RIGHT_SHIFT  &lt 2 COMMA  &kp DEL  &square_bracket  &bracket              &curly_bracket  &triangle_bracket
+&kp ESC         &kp N1        &kp N2  &kp N3  &kp N4  &kp N5                                    &kp N6       &kp N7         &kp N8           &kp N9                &kp N0          &kp EQUAL
+&kp TAB         &kp Q         &kp W   &kp E   &kp R   &kp T                                     &kp Y        &kp U          &kp I            &kp O                 &kp SEMICOLON   &kp GRAVE
+&kp LEFT_SHIFT  &kp A         &kp S   &kp D   &kp F   &kp G                                     &kp H        &kp J          &kp K            &kp L                 &kp P           &kp SQT
+&kp LEFT_WIN    &kp Z         &kp X   &kp C   &kp V   &lt 1 ENTER  &kp LEFT_ALT   &lt 1 PERIOD  &kp B        &kp N          &kp M            &kp NON_US_BACKSLASH  &kp FSLH        &kp MINUS
+&kp LCTRL       &kp LEFT_WIN                          &kp SPACE    &kp BACKSPACE  &kp LCTRL     &lt 2 COMMA  &kp BACKSPACE  &square_bracket  &bracket              &curly_bracket  &triangle_bracket
             >;
         };
 
         number_layer {
             bindings = <
-&to 0   &kp F1  &kp F2    &kp F3        &kp F4          &kp F5                                                  &kp F6  &kp F7                   &kp F8        &kp F9        &kp F10       &kp F11
-&trans  &trans  &trans    &kp UP_ARROW  &trans          &trans                                                  &trans  &kp HOME                 &kp UP_ARROW  &kp END       &trans        &kp F12
-&trans  &trans  &kp LEFT  &kp DOWN      &kp RIGHT       &trans                                                  &trans  &kp LEFT_ARROW           &kp DOWN      &kp RIGHT     &trans        &trans
-&trans  &trans  &trans    &msc SCRL_UP  &msc SCRL_DOWN  &kp LEFT_ALT  &trans                            &trans  &trans  &trans                   &trans        &trans        &trans        &trans
-&trans  &trans                                          &trans        &holdtap BACKSPACE LC(BACKSPACE)  &trans  &trans  &holdtap DELETE LC(DEL)  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_CLR
+&to 0   &kp F1  &kp F2    &kp F3        &kp F4          &kp F5                                 &kp F6  &kp F7          &kp F8        &kp F9        &kp F10       &kp F11
+&trans  &trans  &trans    &kp UP_ARROW  &trans          &trans                                 &trans  &kp HOME        &kp UP_ARROW  &kp END       &trans        &kp F12
+&trans  &trans  &kp LEFT  &kp DOWN      &kp RIGHT       &trans                                 &trans  &kp LEFT_ARROW  &kp DOWN      &kp RIGHT     &trans        &trans
+&trans  &trans  &trans    &msc SCRL_UP  &msc SCRL_DOWN  &lt 1 ENTER  &kp LEFT_ALT   &trans     &trans  &trans          &trans        &trans        &trans        &trans
+&trans  &trans                                          &trans       &kp BACKSPACE  &kp LCTRL  &trans  &kp DELETE      &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_CLR
             >;
 
             label = "NUM";
