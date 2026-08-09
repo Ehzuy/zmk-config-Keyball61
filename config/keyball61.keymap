@@ -66,6 +66,11 @@
             bindings = <&kp DELETE>;
             key-positions = <54 55>;
         };
+
+        Ctrl {
+            bindings = <&kp LCTRL>;
+            key-positions = <42 41>;
+        };
     };
 
     macros {
