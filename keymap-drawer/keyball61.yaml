@@ -451,3 +451,5 @@ combos:
   k: $$mdi:mouse-scroll-wheel$$
 - p: [54, 55]
   k: $$mdi:backspace-reverse-outline$$
+- p: [42, 41]
+  k: $$mdi:apple-keyboard-control$$
