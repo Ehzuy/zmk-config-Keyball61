@@ -52,7 +52,7 @@ layers:
   - {t: /, s: '?'}
   - {t: '-', s: _}
   - $$mdi:apple-keyboard-control$$
-  - LEFT WIN
+  - $$mdi:backspace-reverse-outline$$
   - $$mdi:keyboard-space$$
   - {t: '$$mdi:backspace$$', type: backspace}
   - $$mdi:apple-keyboard-control$$
