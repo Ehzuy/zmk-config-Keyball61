@@ -122,8 +122,8 @@ layers:
   - $$mdi:backspace-reverse-outline$$
   - {h: '2', s: '$$mdi:bluetooth-connect$$'}
   - {h: '3', s: '$$mdi:bluetooth-connect$$'}
-  - {h: '4', s: '$$mdi:bluetooth-connect$$'}
-  - $$mdi:bluetooth-off$$
+  - {h: '$$mdi:arrow-down-bold$$', s: '$$mdi:bluetooth-connect$$'}
+  - BT CLR ALL
   SYM:
   - {t: QWRT, h: toggle}
   - '!'
