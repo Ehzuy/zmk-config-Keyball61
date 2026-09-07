@@ -135,7 +135,7 @@
 &trans  &trans  &trans    &kp UP_ARROW  &trans          &trans                                &trans  &kp HOME        &kp UP_ARROW  &kp END       &trans      &kp F12
 &trans  &trans  &kp LEFT  &kp DOWN      &kp RIGHT       &trans                                &trans  &kp LEFT_ARROW  &kp DOWN      &kp RIGHT     &trans      &trans
 &trans  &trans  &trans    &msc SCRL_UP  &msc SCRL_DOWN  &lt 1 ENTER  &kp LEFT_ALT  &trans     &trans  &trans          &trans        &trans        &trans      &trans
-&trans  &trans                                          &trans       &kp LCTRL     &kp LCTRL  &trans  &kp DELETE      &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_NXT  &bt BT_CLR_ALL
+&trans  &trans                                          &trans       &kp LCTRL     &kp LCTRL  &trans  &kp DELETE      &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_NXT  &bt BT_CLR_ALL
             >;
 
             label = "NUM";
