@@ -42,8 +42,8 @@ layers:
   - X
   - C
   - V
-  - {t: '$$mdi:keyboard-return$$', h: NUM}
   - {t: '$$mdi:backspace$$', h: '$$mdi:apple-keyboard-option$$'}
+  - {t: '$$mdi:keyboard-return$$', h: '$$mdi:apple-keyboard-shift$$'}
   - {t: ., h: NUM}
   - B
   - N
@@ -104,9 +104,9 @@ layers:
   - {t: '$$mdi:transfer$$', type: trans}
   - $$mdi:pan-up$$
   - $$mdi:pan-down$$
-  - {t: '$$mdi:keyboard-return$$', h: NUM, type: held}
+  - {t: '$$mdi:keyboard-return$$', h: NUM}
   - $$mdi:apple-keyboard-option$$
-  - {type: held alternate}
+  - {type: held}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
