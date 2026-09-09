@@ -43,7 +43,7 @@ layers:
   - C
   - V
   - {t: '$$mdi:backspace$$', h: '$$mdi:apple-keyboard-option$$'}
-  - {t: '$$mdi:keyboard-return$$', h: '$$mdi:apple-keyboard-shift$$'}
+  - {t: '$$mdi:keyboard-return$$', h: NUM}
   - {t: ., h: NUM}
   - B
   - N
@@ -55,7 +55,7 @@ layers:
   - {t: '$$mdi:backspace-reverse-outline$$', h: NUM}
   - $$mdi:keyboard-space$$
   - $$mdi:apple-keyboard-control$$
-  - $$mdi:apple-keyboard-control$$
+  - $$mdi:apple-keyboard-shift$$
   - {t: '$$mdi:backspace$$', type: backspace}
   - {t: ',', h: SYM, s: <}
   - '&square_bracket'
@@ -105,8 +105,8 @@ layers:
   - $$mdi:pan-up$$
   - $$mdi:pan-down$$
   - $$mdi:apple-keyboard-option$$
-  - {t: '$$mdi:keyboard-return$$', h: '$$mdi:apple-keyboard-shift$$'}
-  - {type: held}
+  - {t: '$$mdi:keyboard-return$$', h: '$$mdi:apple-keyboard-shift$$', type: held}
+  - {type: held alternate}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
@@ -117,7 +117,7 @@ layers:
   - {type: held alternate}
   - {t: '$$mdi:transfer$$', type: trans}
   - $$mdi:apple-keyboard-control$$
-  - $$mdi:apple-keyboard-control$$
+  - $$mdi:apple-keyboard-shift$$
   - {t: '$$mdi:transfer$$', type: trans}
   - $$mdi:backspace-reverse-outline$$
   - {h: '1', s: '$$mdi:bluetooth-connect$$'}
@@ -153,7 +153,7 @@ layers:
   - $$mdi:bluetooth-off$$
   - {h: '1', s: '$$mdi:bluetooth-connect$$'}
   - {h: '2', s: '$$mdi:bluetooth-connect$$'}
-  - {h: '3', s: '$$mdi:bluetooth-connect$$'}
+  - {h: '$$mdi:arrow-down-bold$$', s: '$$mdi:bluetooth-connect$$'}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '-', s: _}
   - {t: '=', s: +}
