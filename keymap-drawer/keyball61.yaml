@@ -42,7 +42,7 @@ layers:
   - X
   - C
   - V
-  - {t: '$$mdi:backspace$$', h: '$$mdi:apple-keyboard-option$$'}
+  - $$mdi:apple-keyboard-option$$
   - {t: '$$mdi:keyboard-return$$', h: NUM}
   - {t: ., h: NUM}
   - B
