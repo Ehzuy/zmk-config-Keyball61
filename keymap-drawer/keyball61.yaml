@@ -436,24 +436,19 @@ layers:
   - {t: '$$mdi:transfer$$', type: trans}
 combos:
 - p: [28, 27]
-  k: '&mkp MB1'
+  k: $$mdi:pan-down$$
 - p: [0, 1]
-  k: $$mdi:progress-download$$
-  l: [NUM]
-- p: [10, 11]
   k: $$mdi:progress-download$$
   l: [NUM]
 - p: [53, 52]
   k: $$mdi:apple-keyboard-shift$$
-- p: [26, 25]
-  k: '&mkp MB2'
 - p: [26, 27]
-  k: $$mdi:mouse-scroll-wheel$$
+  k: $$mdi:pan-up$$
 - p: [54, 55]
   k: $$mdi:backspace-reverse-outline$$
-- p: [42, 41]
-  k: $$mdi:apple-keyboard-control$$
 - p: [40, 39]
-  k: $$mdi:pan-down$$
+  k: $$mdi:mouse-left-click-outline$$
 - p: [39, 38]
-  k: $$mdi:pan-up$$
+  k: $$mdi:mouse-scroll-wheel$$
+- p: [38, 37]
+  k: $$mdi:mouse-right-click-outline$$
